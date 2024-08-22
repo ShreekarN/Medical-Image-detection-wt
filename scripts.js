@@ -1,12 +1,12 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const uploadButton = document.querySelector('.upload-box .btn:nth-child(1)');
-    const analyzeButton = document.querySelector('.upload-box .btn:nth-child(2)');
+// scripts.js
 
-    uploadButton.addEventListener('click', function() {
-        alert('Upload functionality is not yet implemented.');
-    });
-
-    analyzeButton.addEventListener('click', function() {
-        alert('Analyze functionality is not yet implemented.');
-    });
+document.getElementById('analyzeButton').addEventListener('click', function() {
+    const fileInput = document.getElementById('fileInput');
+    if (fileInput.files.length === 0) {
+        alert('Please select a file to analyze.');
+        return;
+    }
+    // Here you can add the functionality to handle the file
+    alert('File selected: ' + fileInput.files[0].name);
+    // Add your image processing logic here
 });
