@@ -8,9 +8,12 @@
 </head>
 <body>
     <div class="container">
-        <h2>Upload and Analyze Your Medical Image</h2>
-        <input type="file" id="fileInput" accept="image/*" required>
-        <button id="analyzeButton" class="btn">Analyze</button>
+        <h2>Upload Medical Image</h2>
+        <form id="uploadForm">
+            <input type="file" id="fileInput" accept="image/*" required>
+            <button type="button" class="btn" id="uploadBtn">Upload</button>
+            <button type="button" class="btn" id="analyzeBtn">Analyze</button>
+        </form>
     </div>
     <script src="scripts.js"></script>
 </body>
