@@ -25,9 +25,10 @@
         </section>
         <section class="upload">
             <h2>Upload Your Medical Image</h2>
-            <form action="#" method="POST" enctype="multipart/form-data">
-                <input type="file" name="image" accept="image/*" required>
+            <form id="uploadForm" method="POST" enctype="multipart/form-data">
+                <input type="file" id="imageInput" name="image" accept="image/*" required>
                 <button type="submit" class="upload-button">Analyze Image</button>
+                <p id="feedback" style="color: red;"></p>
             </form>
         </section>
     </main>
@@ -35,5 +36,7 @@
     <footer>
         <p>&copy; 2024 Medical Image Analysis. All rights reserved.</p>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
