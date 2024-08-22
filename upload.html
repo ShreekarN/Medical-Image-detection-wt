@@ -3,35 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medical Image Analysis</title>
+    <title>Upload and Analyze - Medical Image Analysis</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Medical Image Analysis</h1>
-        <nav>
-            <ul>
-                <li><a href="upload.html">Home</a></li>
-                <li><a href="index.html">Login</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="upload">
-            <h2>Upload Your Medical Image</h2>
+    <div class="container">
+        <div class="upload-box">
+            <h2>Upload and Analyze Your Medical Image</h2>
             <form id="uploadForm" method="POST" enctype="multipart/form-data">
-                <input type="file" id="imageInput" name="image" accept="image/*" required>
-                <button type="submit" class="upload-button">Analyze Image</button>
-                <p id="feedback" style="color: red;"></p>
+                <button type="button" class="btn">Upload File</button>
+                <button type="button" class="btn">Analyze</button>
             </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Medical Image Analysis. All rights reserved.</p>
-    </footer>
-
+        </div>
+    </div>
     <script src="scripts.js"></script>
 </body>
 </html>
