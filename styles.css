@@ -2,54 +2,41 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
-    padding: 0;
+    padding: 20px;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.login-box, .upload-box {
-    background-color: #ffffff;
+    max-width: 600px;
+    margin: 0 auto;
     padding: 20px;
+    background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 300px;
 }
 
 h2 {
-    margin-bottom: 20px;
-    color: #333;
+    text-align: center;
 }
 
-.textbox {
-    margin-bottom: 15px;
-}
-
-.textbox input {
+input[type="text"],
+input[type="file"] {
     width: 100%;
     padding: 10px;
+    margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-sizing: border-box;
 }
 
 .btn {
     width: 100%;
     padding: 10px;
-    background-color: #5cb85c;
+    background-color: #28a745;
+    color: white;
     border: none;
     border-radius: 5px;
-    color: #fff;
-    font-size: 16px;
     cursor: pointer;
-    margin-top: 10px;
 }
 
 .btn:hover {
-    background-color: #4cae4c;
+    background-color: #218838;
 }
