@@ -1,47 +1,70 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
-.container {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
     text-align: center;
 }
 
-h1 {
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.welcome h2 {
+    font-size: 2em;
     margin-bottom: 20px;
 }
 
-form {
-    margin-bottom: 20px;
-}
-
-input[type="file"] {
-    margin-bottom: 10px;
-}
-
-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
+.upload-button {
     padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
-button:hover {
-    background-color: #0056b3;
+.upload-button:hover {
+    background-color: #218838;
 }
 
-#result {
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
     margin-top: 20px;
-    font-size: 1.2em;
 }
