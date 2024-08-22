@@ -10,9 +10,21 @@
     <div class="container">
         <div class="upload-box">
             <h2>Upload and Analyze Your Medical Image</h2>
-            <button class="btn">Upload File</button>
-            <button class="btn">Analyze</button>
+            <input type="file" id="fileInput" accept="image/*" required>
+            <button id="analyzeButton" class="btn">Analyze</button>
         </div>
     </div>
+    <script>
+        document.getElementById('analyzeButton').addEventListener('click', function() {
+            const fileInput = document.getElementById('fileInput');
+            if (fileInput.files.length === 0) {
+                alert('Please select a file to analyze.');
+                return;
+            }
+            // Here you can add the functionality to handle the file
+            alert('File selected: ' + fileInput.files[0].name);
+            // Add your image processing logic here
+        });
+    </script>
 </body>
 </html>
