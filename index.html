@@ -13,7 +13,6 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="login.html">Login</a></li>
-                <li><a href="upload.html">Upload Image</a></li>
             </ul>
         </nav>
     </header>
@@ -22,7 +21,14 @@
         <section class="welcome">
             <h2>Welcome to Medical Image Analysis</h2>
             <p>Upload your medical images, and our AI will help detect potential issues.</p>
-            <a href="upload.html" class="upload-button">Get Started</a>
+            <a href="index.html" class="upload-button">Upload Image</a>
+        </section>
+        <section class="upload">
+            <h2>Upload Your Medical Image</h2>
+            <form action="#" method="POST" enctype="multipart/form-data">
+                <input type="file" name="image" accept="image/*" required>
+                <button type="submit" class="upload-button">Analyze Image</button>
+            </form>
         </section>
     </main>
 
