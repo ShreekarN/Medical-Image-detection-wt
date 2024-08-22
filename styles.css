@@ -25,12 +25,21 @@ h2 {
 input[type="text"],
 input[type="password"],
 input[type="file"] {
-    width: 100%;
+    width: calc(100% - 20px); /* Adjust width to fit padding */
     padding: 10px;
     margin: 10px 0; /* Space between inputs */
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+input[type="text"],
+input[type="password"] {
+    height: 40px; /* Fixed height for input boxes */
+}
+
+input[type="file"] {
+    height: auto; /* Let the file input resize automatically */
 }
 
 button {
@@ -42,6 +51,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    margin-top: 10px; /* Space between buttons and inputs */
 }
 
 button:hover {
