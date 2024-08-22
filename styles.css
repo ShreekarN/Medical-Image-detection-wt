@@ -1,111 +1,55 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #f4f4f4;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
-
-header h1 {
     margin: 0;
+    padding: 0;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+.container {
     display: flex;
     justify-content: center;
-    background-color: #444;
+    align-items: center;
+    height: 100vh;
 }
 
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-    display: block;
-}
-
-nav ul li a:hover {
-    background-color: #555;
-}
-
-main {
+.login-box, .upload-box {
+    background-color: #ffffff;
     padding: 20px;
-    text-align: center;
-}
-
-.welcome h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.upload-button {
-    padding: 10px 20px;
-    background-color: #28a745;
-    color: white;
-    text-decoration: none;
     border-radius: 5px;
-}
-
-.upload-button:hover {
-    background-color: #218838;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-}
-.login {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
 }
 
-.login h2 {
+h2 {
     margin-bottom: 20px;
+    color: #333;
 }
 
-.login label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+.textbox {
+    margin-bottom: 15px;
 }
 
-.login input[type="text"],
-.login input[type="password"] {
+.textbox input {
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
-.login-button {
+.btn {
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
-    color: white;
+    background-color: #5cb85c;
     border: none;
     border-radius: 5px;
+    color: #fff;
     font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
-.login-button:hover {
-    background-color: #0056b3;
+.btn:hover {
+    background-color: #4cae4c;
 }
